@@ -88,7 +88,7 @@ def submit_update():
         'email': email
         })
 
-    return redirect('/')
+    return redirect('/') 
 
 
 # @app.route('/submit_update_entry', methods=['POST'])
