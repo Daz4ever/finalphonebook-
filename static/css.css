@@ -1,0 +1,64 @@
+
+
+body {
+  background-color: lightgrey;
+  font-family: arial;
+  margin: 0;
+}
+
+.nav {
+  background-color: olive;
+  padding: 0 20px;
+  font-family: arial;
+  font-size: 40px;
+  text-align: left;
+}
+
+.navli {
+  display: inline-block;
+  padding: 20px;
+}
+
+.navli a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #222;
+
+}
+
+.navli a:hover {
+  text-decoration: none;
+  color: white;
+
+}
+.mytable {
+  text-align: center;
+  border: 1px solid black;
+  background-color: black;
+  width: 100%;
+}
+
+.tablehead {
+padding: 30px;
+border: 1px solid black;
+background-color: #222;
+color: white;
+font-size: 20px;
+text-align: center;
+}
+
+.tablecolumn {
+  padding: 20px;
+  border: 1px solid black;
+  background-color: #222;
+  color: white;
+}
+
+.box {
+  background-color: #859483;
+  padding: 20px;
+}
+
+div .myinput {
+  width: 50%;
+}

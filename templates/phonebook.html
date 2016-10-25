@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<table class="mytable">
+  <th class="tablehead">Name</th>
+  <th class="tablehead">Phone Number</th>
+  <th class="tablehead">Email</th>
+  <th class="tablehead"></th>
+  <!-- loops through query_list (phonebook) and print out name, number and email -->
+{% for i in query_list %}
+  <tr>
+    <td class="tablecolumn">{{i.name}}</td>
+    <td class="tablecolumn">{{i.phone_number}}</td>
+    <td class="tablecolumn">{{i.email}}</td>
+    <!-- href="/update_entry?id={{i.id}}" links me to the update page based on the query_list in the homepage table which is correlated to a unique id. I can enter a different id number in the url to update that contact while on the update.html page-->
+    <td class="tablecolumn"><a href="/update_entry?id={{i.id}}">Edit</a></td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% endblock %}

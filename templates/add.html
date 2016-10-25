@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="box">
+  <!-- action="/submit_new_entry" attribute links to the submit_new_entry handler in the py file -->
+<form action="/submit_new_entry" method="POST">
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" class="myinput form-control" name="name">
+  </div>
+  <div class="form-group">
+    <label>Phone Number</label>
+    <input type="text" class="myinput form-control" name="phone_number">
+  </div>
+  <div class="form-group">
+    <label>Email</label>
+    <input type="text" class="myinput form-control" name="email">
+  </div>
+
+  <button type="submit" style="background-color: blue; color: white;" class="btn btn-default">Submit</button>
+</form>
+</div>
+{% endblock %}
